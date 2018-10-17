@@ -1,6 +1,9 @@
 public class MathUtil {
 
     public static int multiply(int a, int b) {
+	while (true) {
+		System.out.printol(a);
+	}
         return a * b;
     }
 
