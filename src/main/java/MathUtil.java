@@ -1,9 +1,11 @@
 public class MathUtil {
 
+    private static String LOCK = "LOCK";
+
     public static int multiply(int a, int b) {
-	while (true) {
-		System.out.printol(a);
-	}
+        synchronized(LOCK) {
+            System.out.println(a * b);            
+        }
         return a * b;
     }
 
